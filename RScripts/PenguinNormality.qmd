@@ -37,11 +37,13 @@ theme_update(
   axis.text=element_text(family="xkcd Script"),
   strip.text=element_text(family="xkcd Script"))
 ```
+Each chunk is doing a group of functions.
 
 ```{r dataprep}
 rawdata <- penguins |>
   drop_na() |> 
   mutate(year=factor(year))
+#changed class
 ```
 
 # Test for Normal Distribution
@@ -67,7 +69,6 @@ ggplot(rawdata,aes(body_mass))+
            x = 5500, y = 4*10^-4,
            label=paste0("KS-Test: p ",p_ks,
                  "\nShapiro-Test: p ", p_sw))
-
 ggplot(rawdata,aes(body_mass, color = "distribtion type"))+
   geom_line(stat = "density", linewidth = 1,
             aes(color="empirical"))+  
