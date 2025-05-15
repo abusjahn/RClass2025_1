@@ -1,0 +1,41 @@
+---
+title: "Demo2025"
+author: "Dr. H. Onk"
+format: 
+  docx:
+    output-file: YAdemo.docx
+    toc: true
+    reference-doc:  F:/Aktenschrank/Kontakte/CQ_Bildung/projekte/ABI/RClass2025_1/RScripts/Template2025_1.docx
+editor: visual
+execute: 
+  echo: false
+  warning: false
+  output: asis
+fig-dpi: 300
+fig-width: 6
+fig-height: 8
+tbl-cap-location: top
+---
+
+# Quarto 
+
+***Quarto*** enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: true
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+This is a mixture of text and like mean wt: `r mean(mtcars$wt)`; that is useful.
