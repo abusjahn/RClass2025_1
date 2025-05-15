@@ -37,6 +37,7 @@ theme_update(
   axis.text=element_text(family="xkcd Script"),
   strip.text=element_text(family="xkcd Script"))
 ```
+
 Each chunk is doing a group of functions.
 
 ```{r dataprep}
